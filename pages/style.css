@@ -2,6 +2,7 @@
 /** ----------------------------GLOBALES --------------------------------**/
 /** ------------------------------------------------------------------------**/
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
     text-decoration: none;
 }
 
-html{
+html {
     background-color: black;
 }
 
@@ -57,8 +58,8 @@ h1 {
 }
 
 #header {
-    background-position:initial;
-    background-size:cover;
+    background-position: initial;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 
@@ -66,7 +67,7 @@ h1 {
     background-image: url(../assets/img/Strokes2.jpg);
 }
 
-.nav{
+.nav {
     border-top: 5px solid white;
     border-bottom: 5px solid white;
 
@@ -86,15 +87,13 @@ h1 {
     color: black;
 }
 
-.nav__menu__item{
-  
-}
+.nav__menu__item {}
 
 .nav__menu__link {
     color: white;
     font-size: 1.5rem;
-    text-transform:uppercase;
-    text-decoration: none;  
+    text-transform: uppercase;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -110,7 +109,7 @@ h1 {
     gap: 2rem;
 }
 
-.articulo1{
+.articulo1 {
     border: 3px solid white;
     padding: 2rem;
 }
@@ -126,24 +125,25 @@ img {
 
 p {
     font-size: 2rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     text-align: start;
     padding: 0 5rem;
     color: white;
 }
 
-th, td{
+th,
+td {
     padding: 20px;
 }
 
-tr:hover td{
+tr:hover td {
     background-color: brown;
 }
 
-th{
+th {
     font-size: 1.1rem;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 td {
@@ -151,7 +151,7 @@ td {
 }
 
 thead {
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
@@ -191,6 +191,7 @@ iframe {
     font-size: 3.2rem;
     color: white;
 }
+
 .cards__img {
     width: 43.75rem;
     height: 15.625rem;
@@ -201,7 +202,7 @@ iframe {
     margin-top: 1rem;
     font-size: 2rem;
     font-family: 'Bangers', cursive;
-    color:blueviolet;
+    color: blueviolet;
 }
 
 /** ------------------------------------------------------------------------**/
@@ -224,7 +225,7 @@ iframe {
     margin-top: 1rem;
 }
 
-.fechas__li{
+.fechas__li {
     margin: 2rem 0;
 }
 
@@ -238,7 +239,7 @@ iframe {
 
 
 .footer__ul {
-    display: flex; 
+    display: flex;
     justify-content: end;
     border-top: 2px solid red;
     background-color: black;
@@ -268,7 +269,7 @@ iframe {
     margin: 0.4rem;
 }
 
-.footer__title{
+.footer__title {
     color: white;
     position: relative;
     top: 4rem;
@@ -285,7 +286,7 @@ iframe {
     font-size: 0.8rem;
 }
 
-.footerchico{
+.footerchico {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -310,7 +311,7 @@ iframe {
     gap: 9rem;
 }
 
-.integrantes__tittle{
+.integrantes__tittle {
     font-size: 2rem;
     color: white;
     text-align: center;
@@ -319,7 +320,7 @@ iframe {
 
 .integrantes__cards {
     margin-top: 2rem;
-  
+
 }
 
 .integrantes__img {
@@ -327,7 +328,7 @@ iframe {
     height: 40rem;
 }
 
-.integrantes__parrafo{
+.integrantes__parrafo {
     font-size: 1rem;
     color: white;
     margin-top: 1rem;
@@ -337,12 +338,17 @@ iframe {
 /** ----------------------------CONTACTO----------------------------------**/
 /** -----------------------------------------------------------------------**/
 
-.form__container{
+.contenedorContacto {
+    width: auto;
+   }
+
+.form__container {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 5rem auto;
 }
 
-.form{
+.form {
     width: 60%;
     height: 100%;
     margin: 0 auto;
@@ -350,10 +356,10 @@ iframe {
     font-family: 'Bangers', cursive;
     letter-spacing: 0.5rem;
     font-size: 1.3rem;
-    margin-top: 5rem;
+
 }
 
-.form__header{
+.form__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,23 +369,24 @@ iframe {
     font-size: 2rem;
 }
 
-.form__label{
+.form__label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.form__form{
+
+.form__form {
     display: grid;
     text-align: center;
     color: white;
     height: 30rem;
 }
 
-.form__textarea{
+.form__textarea {
     height: 10rem;
 }
 
-.btn__submit{
+.btn__submit {
     background-color: red;
     height: 3rem;
     width: 50%;
@@ -388,7 +395,7 @@ iframe {
     font-size: 2rem;
 }
 
-.btn__submit:hover{
+.btn__submit:hover {
     background-color: green;
     height: 3rem;
     width: 50%;
@@ -397,7 +404,7 @@ iframe {
     font-size: 2rem;
 }
 
-.contenedorFechas{
+.contenedorFechas {
     width: 100%;
 }
 
@@ -405,11 +412,12 @@ iframe {
 
 @media screen and (max-width: 1110px) {
     .seccion1 {
-            display: flex;
-            flex-direction: column;
-            margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
     }
-    .articulo2__image{
+
+    .articulo2__image {
         margin-top: 2rem;
     }
 }
@@ -423,6 +431,7 @@ iframe {
         background-color: rgb(27, 27, 27);
         width: 100%;
     }
+
     .seccion1 {
         margin-top: 28rem;
     }
@@ -436,12 +445,13 @@ iframe {
 /** ------------------------------Media Querys Integrantes-----------------------------------------**/
 
 @media screen and (max-width: 880px) {
-    .integrantes{
+    .integrantes {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.4rem;
     }
-    .integrantes__img{
+
+    .integrantes__img {
         margin: 0 2rem 0 2rem;
         width: 20rem;
         height: 30rem;
@@ -449,11 +459,12 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
-    .integrantes{
+    .integrantes {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .integrantes__img{
+
+    .integrantes__img {
         width: 90%;
     }
 }
@@ -461,27 +472,23 @@ iframe {
 /** ------------------------------Media Querys disco/fechas/contacto-----------------------------------------**/
 
 @media screen and (min-width: 800px) {
-        .contenedorEtc {
+    .contenedorEtc {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .cards__discos{
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .form__title{
+    .form__title {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .form__title{
+    .form__title {
         font-size: 1.2rem;
     }
-    .form__label{
+
+    .form__label {
         font-size: 1rem;
     }
 }
@@ -499,39 +506,46 @@ iframe {
     transition: width 7s;
 }
 
-.table:hover{
+.table:hover {
     width: 80%;
 }
 
-
-
 .nav__menu {
-   animation-name: animacionparrafo;
-   animation-iteration-count: infinite;
-   animation-duration: 5s;
-   animation-delay: 0s;
-   background-color: black;
+    animation-name: animacionparrafo;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    background-color: black;
 }
 
 @keyframes animacionparrafo {
-    10%{background-color: black;}
-    100%{background-color: yellow;}
+    10% {
+        background-color: black;
     }
 
-    .nav__menu__link {
-        animation-name: letraanimacion;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-delay: 0s;
-        transition: font-size 1s;
-     }
-     
-     @keyframes letraanimacion {
-         10%{color: white;}
-         100%{color: black;}
-         }
+    100% {
+        background-color: yellow;
+    }
+}
 
-         .nav__menu__link:hover{
-             font-size: 2.5rem;
-         }
+.nav__menu__link {
+    animation-name: letraanimacion;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    transition: font-size 1s;
+}
 
+@keyframes letraanimacion {
+    10% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.nav__menu__link:hover {
+    font-size: 2.5rem;
+}
