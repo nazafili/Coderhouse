@@ -488,6 +488,12 @@ iframe {
 }
 
 /** ------------------------------Media Querys disco/fechas/contacto-----------------------------------------**/
+@media screen and (max-width: 800px) {
+    .contenedorEtc {
+        width: 100%;
+    }
+}
+
 
 @media screen and (min-width: 800px) {
     .contenedorEtc {
