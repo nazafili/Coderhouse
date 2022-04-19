@@ -558,12 +558,23 @@ iframe {
 
 /** ------------------------------ BOOTSTRAP --------------------------------------- **/
 
+.list-group-item {
+    background-color: antiquewhite;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-size: 2rem;
+}
+
 .btn-dark {
     margin-left: 2rem;
 }
 
 .img__carousel {
-    width: 80%;
+    width: 75rem;
     height: 50rem;
 }
 
