@@ -11,18 +11,24 @@
     text-decoration: none;
 }
 
+$color-fondo: rgb(7, 3, 3);
+$border-radius: 25%;
+$width-full: 100%;
+$height-full: 100%;
+
+
 html {
-    background-color: black;
+    background-color: $color-fondo;
 }
 
 body {
     font-family: sans-serif;
     width: fit-content;
-    background-color: black;
+    background-color: $color-fondo;
 }
 
 .body1 {
-    background-color: black;
+    background-color: $color-fondo;
 }
 
 h1 {
@@ -30,8 +36,8 @@ h1 {
 }
 
 img {
-    height: 100%;
-    width: 100%;
+    height: $height-full;
+    width: $width-full;
 }
 
 p {
