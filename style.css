@@ -384,7 +384,7 @@ iframe {
     width: 90%;
     justify-content: center; }
   .integrantes__cards {
-    margin-left: 4rem; } }
+    margin-left: 2.5rem; } }
 
 /** ------------------------------Media Querys disco/fechas/contacto-----------------------------------------**/
 @media screen and (max-width: 800px) {
@@ -405,6 +405,7 @@ iframe {
   .form__label {
     font-size: 1rem; } }
 
+/** ------------------------------Media Querys discografia-----------------------------------------**/
 /** ------------------------------ gradients// animation // ----------------------------------------**/
 .table {
   background-color: gainsboro;
@@ -462,8 +463,8 @@ iframe {
   margin-left: 2rem; }
 
 .img__carousel {
-  width: 75rem;
-  height: 50rem; }
+  width: 60rem;
+  height: 40rem; }
 
 .carousel-item.active {
   display: flex;

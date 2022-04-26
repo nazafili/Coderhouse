@@ -113,8 +113,6 @@ p {
     color: black;
 }
 
-.nav__menu__item {}
-
 .nav__menu__link {
     color: white;
     font-size: 1.5rem;
@@ -488,7 +486,7 @@ iframe {
     }
 
     .integrantes__cards {
-        margin-left: 4rem;
+        margin-left: 2.5rem;
 
     }
 }
@@ -522,6 +520,8 @@ iframe {
         font-size: 1rem;
     }
 }
+
+/** ------------------------------Media Querys discografia-----------------------------------------**/
 
 
 /** ------------------------------ gradients// animation // ----------------------------------------**/
@@ -599,8 +599,8 @@ iframe {
 }
 
 .img__carousel {
-    width: 75rem;
-    height: 50rem;
+    width: 60rem;
+    height: 40rem;
 }
 
 .carousel-item.active {
