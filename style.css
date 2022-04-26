@@ -384,7 +384,7 @@ iframe {
     width: 90%;
     justify-content: center; }
   .integrantes__cards {
-    margin-left: 2.5rem; } }
+    margin-left: 2rem; } }
 
 /** ------------------------------Media Querys disco/fechas/contacto-----------------------------------------**/
 @media screen and (max-width: 800px) {
