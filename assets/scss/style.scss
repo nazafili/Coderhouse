@@ -304,6 +304,7 @@ iframe {
     margin-left: 1.5rem;
     width: 90%;
     height: 40rem;
+    object-fit: cover;
 }
 
 .integrantes__parrafo {
@@ -751,4 +752,4 @@ $color in $redes {
         font-family: 'Bangers', cursive;
     
     }
-}
+}   
