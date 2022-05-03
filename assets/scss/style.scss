@@ -49,33 +49,6 @@ p {
 /** ----------------------------NOSOTROS INDEX // HEADER // SECTION // TABLE --------------------------------**/
 /** ---------------------------------------------------------------------------------------------------------**/
 
-.logo {
-    display: map-get($map: $logo, $key: display);
-    justify-content: map-get($map: $logo, $key: justify-content);
-    align-items: map-get($map: $logo, $key: align-items);
-    padding: map-get($map: $logo, $key: padding);
-    height: 100%;
-    width: 100%;
-    .banda {
-        width: 8.125rem;
-        height: 8.125rem;
-        border-radius: 50%;
-        border: 3px solid black;
-        position: relative;
-        top: 10rem;
-        right: 3rem;
-    }
-    .titulo {
-        position: relative;
-        top: 10rem;
-        right: 2rem;
-        font-size: 8.25rem;
-        color: white;
-        font-family: 'Bangers', cursive;
-    
-    }
-}
-
 
 #header {
     background-position: initial;
@@ -719,6 +692,8 @@ $color in $redes {
     }
 }
 
+//////// EXTENDS //////////
+
 .btn--aceptar {
     @extend .btn;
     background-color: green;
@@ -731,7 +706,7 @@ $color in $redes {
     color: black;
 }
 
-// Mixins
+//////// MIXINS //////////
 
 @mixin sizes ($w, $h) {
     height: $h;
@@ -739,12 +714,41 @@ $color in $redes {
 }
 
 .box {
-    @include sizes(90%, 100px);
+    @include sizes(90%, 100%);
     background-color: red;
     margin: 2rem auto;
 
     .parrafo {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
+    }
+}
+
+////// MAP-GET /////////
+
+.logo {
+    display: map-get($map: $logo, $key: display);
+    justify-content: map-get($map: $logo, $key: justify-content);
+    align-items: map-get($map: $logo, $key: align-items);
+    padding: map-get($map: $logo, $key: padding);
+    height: 100%;
+    width: 100%;
+    .banda {
+        width: 8.125rem;
+        height: 8.125rem;
+        border-radius: 50%;
+        border: 3px solid black;
+        position: relative;
+        top: 10rem;
+        right: 3rem;
+    }
+    .titulo {
+        position: relative;
+        top: 10rem;
+        right: 2rem;
+        font-size: 8.25rem;
+        color: white;
+        font-family: 'Bangers', cursive;
+    
     }
 }

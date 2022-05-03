@@ -37,37 +37,13 @@ p {
 /** ---------------------------------------------------------------------------------------------------------**/
 /** ----------------------------NOSOTROS INDEX // HEADER // SECTION // TABLE --------------------------------**/
 /** ---------------------------------------------------------------------------------------------------------**/
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15rem;
-  height: 100%;
-  width: 100%; }
-  .logo .banda {
-    width: 8.125rem;
-    height: 8.125rem;
-    border-radius: 50%;
-    border: 3px solid black;
-    position: relative;
-    top: 10rem;
-    right: 3rem; }
-  .logo .titulo {
-    position: relative;
-    top: 10rem;
-    right: 2rem;
-    font-size: 8.25rem;
-    color: white;
-    font-family: 'Bangers', cursive; }
-
 #header {
   background-position: initial;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 40rem;
-  background-image: url(../img/Strokes2.jpg);
-}
+  background-image: url(../img/Strokes2.jpg); }
 
 .nav {
   border-top: 5px solid white;
@@ -577,10 +553,33 @@ black {
   color: black; }
 
 .box {
-  height: 100px;
+  height: 100%;
   width: 90%;
   background-color: red;
   margin: 2rem auto; }
   .box .parrafo {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem;
+  height: 100%;
+  width: 100%; }
+  .logo .banda {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    top: 10rem;
+    right: 3rem; }
+  .logo .titulo {
+    position: relative;
+    top: 10rem;
+    right: 2rem;
+    font-size: 8.25rem;
+    color: white;
+    font-family: 'Bangers', cursive; }
