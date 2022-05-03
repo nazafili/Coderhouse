@@ -44,23 +44,21 @@ p {
   padding: 15rem;
   height: 100%;
   width: 100%; }
-
-.logo__banda {
-  width: 8.125rem;
-  height: 8.125rem;
-  border-radius: 50%;
-  border: 3px solid black;
-  position: relative;
-  top: 10rem;
-  right: 3rem; }
-
-.logo__titulo {
-  position: relative;
-  top: 10rem;
-  right: 2rem;
-  font-size: 8.25rem;
-  color: white;
-  font-family: 'Bangers', cursive; }
+  .logo .banda {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    top: 10rem;
+    right: 3rem; }
+  .logo .titulo {
+    position: relative;
+    top: 10rem;
+    right: 2rem;
+    font-size: 8.25rem;
+    color: white;
+    font-family: 'Bangers', cursive; }
 
 #header {
   background-position: initial;
@@ -456,7 +454,7 @@ iframe {
   margin: auto;
   margin-bottom: 1rem; }
 
-.btn {
+.btn, .btn--aceptar, .btn--cancelar {
   font-size: 2rem; }
 
 .btn-dark {
@@ -550,3 +548,38 @@ iframe {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0; }
+
+blue {
+  color: blue; }
+
+yellow {
+  color: yellow; }
+
+black {
+  color: black; }
+
+.btn--twitter {
+  background-color: #39c7eb; }
+
+.btn--facebook {
+  background-color: #2e2eff; }
+
+.btn--youtube {
+  background-color: #ff2222; }
+
+.btn--aceptar {
+  background-color: green;
+  color: yellow; }
+
+.btn--cancelar {
+  background-color: red;
+  color: black; }
+
+.box {
+  height: 100px;
+  width: 90%;
+  background-color: red;
+  margin: 2rem auto; }
+  .box .parrafo {
+    font-size: 3.5rem;
+    text-align: center; }

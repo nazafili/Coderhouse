@@ -1,0 +1,27 @@
+// Colores //
+$color-fondo: rgb(7, 3, 3);
+$warning: red;
+$success: green;
+
+// Medidas //
+$border-radius: 25%;
+$width-full: 100%;
+$height-full: 100%;
+
+
+// Map
+$redes: (
+    twitter: rgb(57, 199, 235),
+    facebook: rgb(46, 46, 255),
+    youtube: rgb(255, 34, 34)
+);
+
+//Map Get
+
+$logo: (
+    display: flex,
+    justify-content: center,
+    padding: 15rem,
+    align-items: center
+);
+

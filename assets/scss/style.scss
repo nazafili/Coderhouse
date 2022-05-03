@@ -2,6 +2,8 @@
 /** ----------------------------GLOBALES --------------------------------**/
 /** ------------------------------------------------------------------------**/
 
+@import 'variables';
+
 
 * {
     margin: 0;
@@ -10,12 +12,6 @@
     list-style: none;
     text-decoration: none;
 }
-
-$color-fondo: rgb(7, 3, 3);
-$border-radius: 25%;
-$width-full: 100%;
-$height-full: 100%;
-
 
 html {
     background-color: $color-fondo;
@@ -54,33 +50,32 @@ p {
 /** ---------------------------------------------------------------------------------------------------------**/
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15rem;
+    display: map-get($map: $logo, $key: display);
+    justify-content: map-get($map: $logo, $key: justify-content);
+    align-items: map-get($map: $logo, $key: align-items);
+    padding: map-get($map: $logo, $key: padding);
     height: 100%;
     width: 100%;
+    .banda {
+        width: 8.125rem;
+        height: 8.125rem;
+        border-radius: 50%;
+        border: 3px solid black;
+        position: relative;
+        top: 10rem;
+        right: 3rem;
+    }
+    .titulo {
+        position: relative;
+        top: 10rem;
+        right: 2rem;
+        font-size: 8.25rem;
+        color: white;
+        font-family: 'Bangers', cursive;
+    
+    }
 }
 
-.logo__banda {
-    width: 8.125rem;
-    height: 8.125rem;
-    border-radius: 50%;
-    border: 3px solid black;
-    position: relative;
-    top: 10rem;
-    right: 3rem;
-}
-
-.logo__titulo {
-    position: relative;
-    top: 10rem;
-    right: 2rem;
-    font-size: 8.25rem;
-    color: white;
-    font-family: 'Bangers', cursive;
-
-}
 
 #header {
     background-position: initial;
@@ -707,4 +702,49 @@ iframe {
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+}
+
+@each $color in blue,
+yellow,
+black {
+    #{$color} {
+        color: #{$color};
+    }
+}
+
+@each $red,
+$color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+.btn--aceptar {
+    @extend .btn;
+    background-color: green;
+    color: yellow;
+}
+
+.btn--cancelar {
+    @extend .btn;
+    background-color: red;
+    color: black;
+}
+
+// Mixins
+
+@mixin sizes ($w, $h) {
+    height: $h;
+    width: $w;
+}
+
+.box {
+    @include sizes(90%, 100px);
+    background-color: red;
+    margin: 2rem auto;
+
+    .parrafo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
 }
