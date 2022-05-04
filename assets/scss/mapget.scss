@@ -1,0 +1,26 @@
+.logo {
+    display: map-get($map: $logo, $key: display);
+    justify-content: map-get($map: $logo, $key: justify-content);
+    align-items: map-get($map: $logo, $key: align-items);
+    padding: map-get($map: $logo, $key: padding);
+    height: 100%;
+    width: 100%;
+    .banda {
+        width: 8.125rem;
+        height: 8.125rem;
+        border-radius: 50%;
+        border: 3px solid black;
+        position: relative;
+        top: 10rem;
+        right: 3rem;
+    }
+    .titulo {
+        position: relative;
+        top: 10rem;
+        right: 2rem;
+        font-size: 8.25rem;
+        color: white;
+        font-family: 'Bangers', cursive;
+    
+    }
+}   

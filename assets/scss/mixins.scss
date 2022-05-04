@@ -1,0 +1,15 @@
+@mixin sizes ($w, $h) {
+    height: $h;
+    width: $w;
+}
+
+.box {
+    @include sizes(90%, 100%);
+    background-color: red;
+    margin: 2rem auto;
+
+    .parrafo {
+        font-size: 3rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,11 @@
+.btn--aceptar {
+    @extend .btn;
+    background-color: green;
+    color: yellow;
+}
+
+.btn--cancelar {
+    @extend .btn;
+    background-color: red;
+    color: black;
+}
